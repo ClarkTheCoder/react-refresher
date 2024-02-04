@@ -1,7 +1,14 @@
 // className because class is a reserved keyword in JSX/JS
+import { MouseEvent } from "react";
+
 function ListGroup() {
   let items = ["Saint John", "Victoria", "Toronto", "Winnipeg"];
   //   items = [];
+
+  // type annotation
+  const handleClick = (event: MouseEvent) => {
+    console.log(event);
+  };
 
   return (
     <>
